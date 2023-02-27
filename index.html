@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<style>
+    .body{
+        color: black;
+    }
+</style>
+<head>
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+
+	<!-- CSS file Included -->
+	<link rel="stylesheet"
+		type="text/css" href="tic.css">
+
+	<!-- JavaScript file included -->
+	<script src="tic.js"></script>
+</head>
+
+<body>
+    
+	<div id="main">
+		<h1>TIC TAC TOE</h1>
+
+		<!-- Game Instructions -->
+		<p id="ins">Game starts by just Tap on
+			box<br><br>First Player starts as
+			<b>Player 1</b><br>And<br>Second
+			Player as <b>Player 2</b>
+		</p>
+
+
+
+
+		<br><br>
+		<!-- 3*3 grid of Boxes -->
+		<input type="text" id="b1" onclick=
+			"myfunc_3(); myfunc();" readonly>
+
+		<input type="text" id="b2" onclick=
+			"myfunc_4(); myfunc();" readonly>
+
+		<input type="text" id="b3" onclick=
+			"myfunc_5(); myfunc();" readonly>
+		<br><br>
+
+		<input type="text" id="b4" onclick=
+			"myfunc_6(); myfunc();" readonly>
+			
+		<input type="text" id="b5" onclick=
+			"myfunc_7(); myfunc();" readonly>
+
+		<input type="text" id="b6" onclick=
+			"myfunc_8(); myfunc();" readonly>
+		<br><br>
+
+		<input type="text" id="b7" onclick=
+			"myfunc_9(); myfunc();" readonly>
+
+		<input type="text" id="b8" onclick=
+			"myfunc_10();myfunc();" readonly>
+
+		<input type="text" id="b9" onclick=
+			"myfunc_11();myfunc();" readonly>
+
+		<!-- Grid end here -->
+		<br><br><br>
+		<!-- Button to reset game -->
+		<button id="but" onclick="myfunc_2()">
+			RESET
+		</button>
+
+		<br><br>
+		<!-- Space to show player turn -->
+		<p id="print"></p>
+        <div>
+            <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="label">
+            <i class="fas fa-moon"></i>
+            <i class='fas fa-sun'></i>
+            <div class='ball'>
+          </label>
+        </div>
+
+
+	</div>
+    <h2></h2>
+
+<button type="button" onclick="myFunction()">ENABLE DARKK MODE</button>
+<button type="button" onclick="myFunction2()">ENABLE Blue  MODE</button>
+
+<script>
+function myFunction() {
+  document.body.style.backgroundColor = "black";
+}
+function myFunction2() {
+  document.body.style.backgroundColor = "blue";
+}
+
+</script>
+</body>
+
+</html>
